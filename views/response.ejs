@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Pogoda dla <%=cityName%></h1>
+    <h3>Opis</h3>
+    <p><%=description%></p>
+    <h3>Temperatura</h3>
+    <p><%=temperature%></p>
+    <img src="<%=ico%>">
+    <%if(temperature>5){%>
+    <p>Jesc dość ciepło</p>
+    <%}else{ %>
+    <p>Jest dość chłodno</p>
+    <%}%>
+</body>
+</html>
